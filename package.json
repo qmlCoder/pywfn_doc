@@ -6,6 +6,7 @@
     "upload": "rsync -avz ./docs/.vitepress/dist/ fly@47.115.214.219:/home/fly/docs/pywfn/"
   },
   "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^2.0.0-alpha.16"
   }
 }

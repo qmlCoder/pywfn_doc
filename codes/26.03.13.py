@@ -1,12 +1,3 @@
-# 调整原子顺序
-
-## 背景
-
-使用高斯建模得到的$B_{12}H_{12}^{2-}$分子的结构上相邻的B-H在原子顺序上不相邻，这就导致分析轨道系数的时候不方便，因此使用pywfn写个脚本来调整原子顺序
-
-## 代码
-
-```py
 import numpy as np
 from pywfn.base import Mole
 from pywfn.reader import LogReader
@@ -47,10 +38,3 @@ writer.job = "m062x 6-311g nosymm pop=full gfinput"
 writer.charge = -2
 writer.multip = 1
 writer.save("test.gjf")
-
-```
-
-## 结果
-
-![](../imgs/26.03.13.png)
-调整之后所有的B-H的原子索引是相邻的了
