@@ -1,0 +1,7 @@
+.vp-doc pre,
+.vp-doc [class*="language-"] pre {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    max-height: 20rem;
+    font-size: 0.8rem;
+}
