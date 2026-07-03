@@ -73,6 +73,7 @@ export default defineConfig({
           { text: "分子性质", link: "/教程/分子性质" },
           { text: "空间性质", link: "/教程/空间性质" },
           { text: "实用工具", link: "/教程/实用工具" },
+          { text: "内置数据", link: "/教程/内置数据" },
         ],
       },
       {

@@ -1,7 +1,11 @@
-.vp-doc pre,
-.vp-doc [class*="language-"] pre {
+/* 纯输出代码块（计算结果的输出）：限制宽高和字体 */
+.vp-doc pre:not([class*="language-"]):not([class*="shiki"]) {
+    max-height: 15rem;
+    font-size: 0.75rem;
     overflow-x: scroll;
     overflow-y: scroll;
-    max-height: 20rem;
-    font-size: 0.8rem;
+}
+.vp-doc pre:not([class*="language-"]):not([class*="shiki"]) > code {
+    white-space: pre-wrap;
+    word-break: break-all;
 }

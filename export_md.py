@@ -1,7 +1,7 @@
 import subprocess, sys
 from pathlib import Path
 
-nb_path = Path("docs/教程/设计理念.ipynb")
+nb_path = Path("docs/教程/空间性质.ipynb")
 python = sys.executable  # 或 .venv/Scripts/python.exe
 
 subprocess.run([
