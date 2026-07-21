@@ -9,15 +9,17 @@ mole = Mole(reader)
 
 map_dick = {}
 
-for i, sym in enumerate(mole.atoms.syms()):
+for i, sym in enumerate(mole.atoms.syms):
     if sym != "B":
         continue
     old_dist = 100
     map_dick[i] = 0
-    for j, sym in enumerate(mole.atoms.syms()):
+    for j, sym in enumerate(mole.atoms.syms):
         if sym != "H":
             continue
-        dist = np.linalg.norm(mole.atoms.xyzs[i] - mole.atoms.xyzs[j])
+        posi=np.array(mole.atoms.xyzs[i])
+        posj=np.array(mole.atoms.xyzs[j])
+        dist = np.linalg.norm(posi - posj)
         if dist < old_dist:
             map_dick[i] = j
             old_dist = dist

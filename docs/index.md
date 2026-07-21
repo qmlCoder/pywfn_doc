@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: 理论
       link: /理论/波函数分析
+    - theme: brand
+      text: 示例
+      link: /示例/index
 
 features:
   - title: 方便

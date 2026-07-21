@@ -86,16 +86,21 @@ export default defineConfig({
       {
         text: "示例",
         items: [
-          { text: "调整原子顺序", link: "/示例/26.03.13" },
-          { text: "ChemDraw设置颜色", link: "/示例/26.03.18" },
-          { text: "任意原子轨道的电子密度", link: "/示例/26.04.29" },
+          { text: "目录", link: "/示例/index" },
+          { text: "26.03.13", link: "/示例/26.03.13" },
+          { text: "26.03.18", link: "/示例/26.03.18" },
+          { text: "26.04.29", link: "/示例/26.04.29" },
           { text: "26.06.09", link: "/示例/26.06.09" },
         ],
       },
-    ],
+      ],
+    outline: {
+    level: "deep",
+    label: "页面导航",
+    },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/qmlCoder" },
     ],
   },
   markdown: {
